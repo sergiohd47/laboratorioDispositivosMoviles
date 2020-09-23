@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PracticaT1_Quiz</string>
+    <string name="empezar">Empezar</string>
+    <string name="descripcion">Imagen Inicial</string>
+    <string name="pregunta">¿Como se llama el punto más alto de los Pirineos?</string>
+    <string name="comprobar">Comprobar</string>
+    <string name="resp1">Pico Aneto</string>
+    <string name="resp2">Mont Montvieux</string>
+    <string name="resp3">Col du Galibier</string>
+    <string name="resp4">Monte Perdid</string>
+    <string name="respuestaCorrecta">¡¡¡Bien, respuesta correcta!!!</string>
+    <string name="respuestaIncorrecta">¡¡¡Incorrecto, la respuesta correcta es: </string>
+    <string name="siguientePregunta">Siguiente Pregunta</string>
+    <string name="mensajeFinal">Se han acabado las preguntas</string>
+    <string name="volverFinal">Volver a Empezar</string>
+    <string name="puntuacion">Su Puntuacion es: </string>
+    <string name="estadisticas">Sus Estadísticas:</string>
+</resources>
