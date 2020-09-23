@@ -4,39 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    android:background="@drawable/camuflaje"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagenPortada"
+        android:layout_width="wrap_content"
+        android:layout_height="249dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/helicopteroportada" />
+
+    <ImageView
+        android:id="@+id/nombreApp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="146dp"
+        app:srcCompat="@drawable/nombreapp" />
 
     <Button
-        android:id="@+id/botonInicio"
+        android:id="@+id/botonComenzar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="65dp"
-        android:layout_marginStart="63dp"
-        android:background="@android:color/holo_red_light"
-        android:text="Inicio" />
+        android:layout_marginBottom="88dp"
+        android:layout_marginStart="73dp"
+        android:text="Comenzar" />
 
     <Button
         android:id="@+id/botonAyuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/botonInicio"
-        android:layout_marginEnd="62dp"
-        android:background="@android:color/holo_red_light"
+        android:layout_alignTop="@+id/botonComenzar"
+        android:layout_marginEnd="73dp"
         android:text="Ayuda" />
-
-    <ImageView
-        android:id="@+id/imagenApp"
-        android:layout_width="match_parent"
-        android:layout_height="352dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/ic_launcher_foreground"
-        android:foreground="@drawable/series_imagen"
-        app:srcCompat="@drawable/series_imagen" />
-
 </RelativeLayout>
