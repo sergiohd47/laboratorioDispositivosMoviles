@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".InicioActivity">
+
+    <EditText
+        android:id="@+id/nombreSerieLista"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Nombre serie"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/numeroTemporadaLista"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nombreSerieLista"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textoTemporada"
+        android:layout_width="160dp"
+        android:layout_height="46dp"
+        android:layout_alignBaseline="@+id/numeroTemporadaLista"
+        android:layout_alignStart="@+id/textoCapitulo"
+        android:text="Numero Temporada" />
+
+    <EditText
+        android:id="@+id/numeroCapituloLista"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nombreSerieLista"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="163dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textoCapitulo"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_alignBaseline="@+id/numeroCapituloLista"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:text="Numero Capitulo" />
+
+    <ImageView
+        android:id="@+id/imagenPortadaActualizar"
+        android:layout_width="134dp"
+        android:layout_height="127dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nombreSerieLista"
+        android:layout_marginBottom="85dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/botonElegirPortada"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="138dp"
+        android:layout_toEndOf="@+id/textoTemporada"
+        android:background="@android:color/holo_red_light"
+        android:text="Elegir foto" />
+
+    <Button
+        android:id="@+id/botonAñadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imagenPortadaActualizar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/botonListar"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/botonElegirPortada"
+        android:layout_alignTop="@+id/botonAñadir"
+        android:background="@android:color/holo_red_light"
+        android:text="LISTA SERIES" />
+
+    <TextView
+        android:id="@+id/textoValoracion"
+        android:layout_width="155dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textoTemporada"
+        android:layout_marginTop="233dp"
+        android:text="Valoracion (0-10)" />
+
+    <EditText
+        android:id="@+id/valoracion"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nombreSerieLista"
+        android:layout_below="@+id/textoCapitulo"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

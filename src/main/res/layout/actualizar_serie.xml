@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:id="@+id/imagenPortadaActualizar"
+        android:layout_width="321dp"
+        android:layout_height="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/nombreSerieActualizar"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:hint="Nombre Serie" />
+
+    <EditText
+        android:id="@+id/textoTemporada"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imagenPortadaActualizar"
+        android:layout_marginTop="201dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Numero Temporada" />
+
+    <EditText
+        android:id="@+id/numeroTemporadaActualizar"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nombreSerieActualizar"
+        android:layout_alignTop="@+id/textoTemporada"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textoCapitulo"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imagenPortadaActualizar"
+        android:layout_marginBottom="193dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Numero Capitulo" />
+
+    <EditText
+        android:id="@+id/numeroCapituloActualizar"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nombreSerieActualizar"
+        android:layout_alignTop="@+id/textoCapitulo"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/botonActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Actualizar" />
+
+    <EditText
+        android:id="@+id/textoValoracion"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imagenPortadaActualizar"
+        android:layout_marginBottom="125dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Valoracion (0-10)" />
+
+    <EditText
+        android:id="@+id/valoracionActualizar"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imagenPortadaActualizar"
+        android:layout_alignTop="@+id/textoValoracion"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
